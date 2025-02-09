@@ -1,4 +1,7 @@
         // // app/videos/[id]/page.jsx (if you are using app)
+
+import Image from "next/image";
+
         
         // export default async function VideoPage({ params }: { params: { id: string } }) {
         //   const { id } = params;
@@ -149,7 +152,7 @@ export default async function VideoPage({
           </video>
           <p className="text-lg mb-4">{video.description}</p>
           {video.thumbnailUrl && (
-            <img
+            <Image
               src={video.thumbnailUrl}
               alt={video.title}
               className="w-full rounded shadow-lg"

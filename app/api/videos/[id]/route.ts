@@ -78,7 +78,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { connectToDatabase } from "@/lib/db";
-import Video, { IVideo } from "@/models/Video";
+import Video from "@/models/Video";
 import { Types } from "mongoose";
 
 export async function GET(
